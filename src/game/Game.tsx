@@ -1,5 +1,5 @@
 import React from 'react';
-import {GameClient} from '../../utils/GameClient';
+import {GameClient} from '../utils/GameClient';
 import {Button} from '@mui/material';
 import {gameStyles} from './GameStyles';
 

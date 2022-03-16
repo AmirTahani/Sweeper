@@ -4,7 +4,7 @@ import React, {
 } from 'react';
 import {ThemeProvider} from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import {SelectBox} from '../index';
+import {SelectBox} from '../components';
 import {
   useDispatch,
   useSelector,
@@ -16,8 +16,8 @@ import {
 import {
   createGame,
   init,
-} from '../../store/reducers/gameReducers';
-import {RootState} from '../../store/store';
+} from '../game/redux/reducers/gameReducers';
+import {RootState} from '../store/store';
 import {Game} from '../game/Game';
 import {
   useAppStyles,

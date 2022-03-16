@@ -2,7 +2,7 @@ import {
   configureStore, ThunkAction, Action,
 } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
-import {gameReducer} from './reducers/gameReducers';
+import {gameReducer} from '../game/redux/reducers/gameReducers';
 import {watcherSaga} from './sagas/rootSaga';
 
 const sagaMiddleware = createSagaMiddleware();

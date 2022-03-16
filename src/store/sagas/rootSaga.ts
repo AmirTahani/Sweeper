@@ -1,9 +1,9 @@
 import {takeLatest} from 'redux-saga/effects';
-import {handleCreateGame, watchGame} from '../actions/gameActions';
+import {handleCreateGame, watchGame} from '../../game/redux/actions/gameActions';
 import {
   createGame,
   init,
-} from '../reducers/gameReducers';
+} from '../../game/redux/reducers/gameReducers';
 
 export function* watcherSaga() {
   yield takeLatest(init.type, watchGame);
