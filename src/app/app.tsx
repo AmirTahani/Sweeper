@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     dispatch(init());
-  }, []);
+  }, [dispatch]);
 
   const onPlayGame = () => {
     dispatch(createGame(`new ${level}`));
@@ -41,13 +41,6 @@ function App() {
   const handleOnLevelChange = (event: SelectChangeEvent) => {
     const newLevel = Number(event?.target?.value);
     setLevel(newLevel);
-  };
-
-  const renderMessage = (message: string) => {
-    if (message !== 'OK') {
-      return message;
-    }
-    return '';
   };
 
   const selectBoxData = useMemo(() => {

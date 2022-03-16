@@ -1,5 +1,5 @@
 import {
-  configureStore, ThunkAction, Action,
+  configureStore,
 } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
 import {gameReducer} from '../game/redux/reducers/gameReducers';
